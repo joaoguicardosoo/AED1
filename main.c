@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
+
+/* Exercicio 1
 int main (){
     int jogador1, jogador2, jogador3, premio, totalapostado, peso, j1recebe, j2recebe, j3recebe;
 
@@ -22,5 +25,21 @@ int main (){
     printf("Jogador 1 recebera R$: %d\n", j1recebe);
     printf("Jogador 2 recebera R$: %d\n", j2recebe);
     printf("Jogador 3 recebera R$: %d\n", j3recebe);
+return 0;
+}
+*/
+
+// Exercicio 2
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int coordenada (){
+    int coordenadax, coordenaday;
+    printf("Entre com a coordenada x:");
+    scanf("%d", &coordenadax);
+    printf("Entre com a coordenada y:");
+    scanf("%d", &coordenaday);
+
 return 0;
 }
