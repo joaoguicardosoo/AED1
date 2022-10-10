@@ -31,12 +31,12 @@ int main() {
     printf("Digite as coordenadas de X e Y separadas por espaco: ");
     scanf("%d %d", &x, &y);
     coord1 = pontoP(x, y);
-    print("Ponto 1: X = %d Y = %d", coord1.x, coord1.y);
+    printf("Ponto 1: X = %d Y = %d \n", coord1.x, coord1.y);
     printf("Digite as coordenadas do segundo ponto separadas por espaco: ");
     scanf("%d %d", &x, &y);
     coord2 = pontoP(x, y);
     distancia1e2 = Distancia(coord1, coord2);
-    print("Distancia entre os dois pontos: %f", distancia1e2);
+    printf("Distancia entre os dois pontos: %f", distancia1e2);
     
     
     return 0;
