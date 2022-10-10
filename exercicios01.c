@@ -1,6 +1,7 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+
 
 struct ponto{  // Declara struct para armazenar as coordenadas do ponto.
   int x;
@@ -18,7 +19,8 @@ Coordenadas pontoP(int x, int y){  // Cria o ponto P com as coordenadas de entra
 }
 
 int Distancia(Coordenadas coord1, Coordenadas coord2){
-    
+    float distancia = 0;
+    distancia = sqrt()
     
     
     
