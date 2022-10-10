@@ -20,10 +20,8 @@ Coordenadas pontoP(int x, int y){  // Cria o ponto P com as coordenadas de entra
 
 int Distancia(Coordenadas coord1, Coordenadas coord2){
     float distancia = 0;
-    distancia = sqrt()
-    
-    
-    
+    distancia = sqrt((coord2.x - coord1.x)+(coord2.y - coord1.y));
+    return distancia;
 }
 int main() {
     int x, y;
@@ -32,7 +30,7 @@ int main() {
     printf("Digite as coordenadas de X e Y separadas por espaco: ");
     scanf("%d %d", &x, &y);
     coord1 = pontoP(x, y);
-    print("%d %d", coord1.x, coord1.y);
+    print("X = %d Y = %d", coord1.x, coord1.y);
     
     
     
