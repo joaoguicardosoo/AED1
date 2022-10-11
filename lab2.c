@@ -1,4 +1,7 @@
 #include<stdio.h>
+#include <stdbool.h>
+
+
 
 #define  MAX  10    // tamanho maximo do vetor
 // Note que o vetor pode ter menos de 10 elementos
@@ -81,7 +84,7 @@ int inserir(Vetor *vet, int x)
 
     if (vet->tam >= MAX) return 1; // erro
     i = vet->tam;
-    vet->elem[i] = x
+    vet->elem[i] = x;
     vet->tam++;
     return 0; // nao tem erro
 
@@ -91,13 +94,16 @@ int inserir(Vetor *vet, int x)
 }
 
 int main (){
-    Vetor vet;
+    Vetor v1;
+    criar(&v1);
     int x;
-    printf("Digite um valor para inserir no vetor: ");
+    printf("Digite o valor a ser inserido no vetor: ");
     scanf("%d", &x);
-    int inserir(vet, x);
-    printf("%d", vet.elem[1]);
 
+    inserir(&v1, x);
+    int m;
+    maior(v1, &m);
+    printf("%d", m);
 
 
 
