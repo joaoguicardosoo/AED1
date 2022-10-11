@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 #define  MAX  10    // tamanho maximo do vetor
+// Note que o vetor pode ter menos de 10 elementos
 
 // Declaracao da estrutura de dados
 struct vetor {
@@ -34,6 +35,13 @@ int maior_v1(Vetor vet, int *erro)
     return m;
 }
 
+/*
+ * Encontra o maior elemento do vetor.
+ * O resultado eh retornado na variavel m passada por referencia
+ * A funcao retorna um codigo de erro:
+ * - 0 se nao houve erro
+ * - 1 se houve erro
+ */
 int maior(Vetor vet, int *m)
 {
     int i;
@@ -53,6 +61,10 @@ int maior(Vetor vet, int *m)
     return 0;
 }
 
+/* Cria um vetor "vazio"
+ * Basicamente, atribui 0 ao tamanho dele
+ * Como o vetor eh estatico, nao precisa alocar espaço para ele
+ */
 int criar(Vetor *vet)
 {
     vet->tam = 0;
@@ -60,14 +72,16 @@ int criar(Vetor *vet)
     return 0; // nao tem erro
 }
 
-// Insere o valor x no vetor vet
+/* Insere o valor x no vetor vet
+ * Retorna codigo de erro como na funcao anterior
+ */
 int inserir(Vetor *vet, int x)
 {
     int i;
 
     if (vet->tam >= MAX) return 1; // erro
     i = vet->tam;
-    vet->elem[i] = x;
+    vet->elem[i] = x
     vet->tam++;
     return 0; // nao tem erro
 
@@ -76,14 +90,13 @@ int inserir(Vetor *vet, int x)
     // vet->elem[vet->tam++] = x;
 }
 
-
 int main (){
-    Vetor v1;
+    Vetor vet;
     int x;
-    printf("Digite o um valor para inserir no vetor: ");
+    printf("Digite um valor para inserir no vetor: ");
     scanf("%d", &x);
-    int inserir(v1, x);
-
+    int inserir(vet, x);
+    printf("%d", vet.elem[1]);
 
 
 
