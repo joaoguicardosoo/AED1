@@ -93,14 +93,19 @@ int inserir(Vetor *vet, int x)
     // vet->elem[vet->tam++] = x;
 }
 
+
+
+
 int main (){
     Vetor v1;
     criar(&v1);
-    int x;
-    printf("Digite o valor a ser inserido no vetor: ");
-    scanf("%d", &x);
+    int x, y, z;
+    printf("Digite 3 valores a serem inseridos no vetor: ");
+    scanf("%d %d %d", &x, &y, &z);
 
     inserir(&v1, x);
+    inserir(&v1, y);
+    inserir(&v1, z);
     int m;
     maior(v1, &m);
     printf("%d", m);
