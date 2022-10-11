@@ -93,7 +93,10 @@ int inserir(Vetor *vet, int x)
     // vet->elem[vet->tam++] = x;
 }
 
-
+int iesima(Vetor vet, int i, int *numeroN){
+    numeroN = vet.elem[i];
+    return 0;
+}
 
 
 int main (){
@@ -108,8 +111,14 @@ int main (){
     inserir(&v1, z);
     int m;
     maior(v1, &m);
-    printf("%d", m);
+    printf("%d \n", m);
 
+    int numeroN;
+    int i;
+    printf("Qual posicao voce quer acessar? ");
+    scanf("%d", &i);
+    iesima(v1, i, &numeroN);
+    printf("%d", numeroN);
 
 
 return 0;
